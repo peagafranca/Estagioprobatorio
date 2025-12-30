@@ -1,0 +1,251 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+}
+
+.titulo {
+    background-color: royalblue;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Cabeçalho*/
+/* Cabeçalho*/
+/* Cabeçalho*/
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(51,47,125);
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 6px;
+}
+
+img {
+    width: 5vh;
+}
+
+.perfil-link {
+    margin-left: auto; 
+    padding-right: 10px;
+}
+
+.perfil-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.perfil-link a:hover {
+    text-decoration: underline;
+}
+
+/*Dados Servidor*/
+/*Dados Servidor*/
+/*Dados Servidor*/
+
+.s-dados, .s-nivel, .s-quesitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+    font-size: 18px;
+}
+
+.preenchimento-dados, .texto-nivel{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #dbeafe;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 200px;
+  margin: 20px 0;
+  width: 80%;
+}
+
+.subtitulo  {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #eff6ff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.campo-texto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.campo-texto label {
+    text-align: left;
+    width: 100px;
+}
+
+.campo-texto input {
+    padding: 5px;
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    justify-content: left;
+    width: 30rem;
+}
+
+#matriculaservidor {
+  width: 120px;
+  text-align: center;
+}
+#nomeservidor {
+  width: 600px;
+  
+}
+#dataexercicioservidor {
+  width: 150px;
+  text-align: center;
+}
+#data-exercicio label {
+  width: auto;
+}
+
+/* Perguntas */
+/* Perguntas */
+/* Perguntas */
+
+.quesito1, .quesito2, .quesito3, .quesito4, .quesito5 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #dbeafe;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+     background-color: #eff6ff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 25px;
+     border-radius: 5px;
+     width: 80%;
+     margin: 5px 10% ;
+
+}
+
+.p-pergunta{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pergunta input[type="radio"],
+.apto-inapto input[type="radio"],
+.concordo-discordo input[type="radio"] {
+  display: none;
+}
+
+.pergunta label, 
+.apto-inapto label, 
+.concordo-discordo label {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: whitesmoke;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Cores de Seleção */
+input[type="radio"]:checked + label {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.total {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+/* Informações Complementares */
+/* Informações Complementares */
+/* Informações Complementares */
+
+.infoc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+    font-size: 18px;
+}
+
+.p-infoc{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #dbeafe;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 200px;
+  margin: 20px 0;
+  width: 80%;
+}
+
+textarea {
+    height: 100px;
+}
